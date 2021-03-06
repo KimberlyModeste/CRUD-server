@@ -52,9 +52,7 @@ module.exports = {
 
        async register(_, {
             registerInput: { username, email, password, confirmPassword}
-        }, 
-        context, 
-        info
+        }
         )
     {
         //Validate user data
@@ -69,7 +67,7 @@ module.exports = {
             throw new UserInputError('This Username is already in use')
 
             errors:{
-                email: 'Username is in use'
+                username: 'Username is in use'
             }
         }
 

@@ -12,7 +12,7 @@ module.exports.validateRegisterInput =(
 
     if(email.trim() === '')
     {
-        errors.username = 'Email must not be empty'
+        errors.email = 'Email must not be empty'
     } 
     else{
         const regex = '/^([0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9})$/';
